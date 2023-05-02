@@ -1,0 +1,21 @@
+<div id="carousel-{{ id }}" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+		{% for item in items %}
+			<div class="carousel-item active">
+				<picture>
+					{% for source in item.picture.sources %}
+						<source
+							srcset="{{ source.x1 }}, {{ source.x2 }} 2x"
+							{% if source.type %}type="{{ source.type }}"{% endif %}
+							media="{{ source.media }}"
+						/>
+					{% endfor %}
+
+					<img src="{{ item.picture.src }}"
+						{% if item.picture.alt %}alt="{{ item.picture.alt }}"{% endif %}
+					/>
+				</picture>
+			</div>
+		{% endfor %}
+  </div>
+</div>

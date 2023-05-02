@@ -1,0 +1,19 @@
+header{
+	nav.navbar{
+		background-color: #c41c67 !important;
+
+		.navbar-brand{
+			color: $white;
+		}
+
+		.navbar-collapse{
+			.navbar-nav{
+				.nav-item{
+					.nav-link{
+						color: $white !important;
+					}
+				}
+			}
+		}
+	}
+}

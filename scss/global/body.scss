@@ -1,4 +1,19 @@
 body{
   margin: 0;
-  overflow: hidden;
+}
+
+.fb-page{
+	width: 100% !important;
+
+	> span{
+		width: 100% !important;
+
+		> iframe{
+			width: 100% !important;
+
+			> ._2p3a{
+				width: 100% !important;
+			}
+		}
+	}
 }

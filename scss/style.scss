@@ -2,6 +2,9 @@
 @import './node_modules/bootstrap/scss/bootstrap';
 
 // Global
+@import './global/backgrounds';
 @import './global/body';
+@import './global/header';
 
 // Components
+@import './components/00-carousel';
