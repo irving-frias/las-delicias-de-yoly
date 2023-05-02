@@ -4,3 +4,5 @@ css/
 index.html
 /compiled
 /js
+# Local Netlify folder
+.netlify
